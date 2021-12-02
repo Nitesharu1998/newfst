@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recycle_API">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout_recycle_api"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearTable"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/rcl_testtype_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rcl_table"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Test Type"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rcl_fasting_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rcl_table"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Fasting"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rcl_description_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rcl_table"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Description"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rcl_rate_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/rcl_table"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Rate"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!-- TODO: Update blank fragment layout -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcl_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearTable"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/recycle_row"
+
+                />
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

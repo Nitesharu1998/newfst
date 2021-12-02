@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#10A7F9</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#004d42</color>
+    <color name="rich_black">#020202</color>
+    <color name="wisteria">#C490D1</color>
+    <color name="feldgrau">#596F62</color>
+    <color name="dark_slate_blue">#4c4d94</color>
+    <color name="blue_jeans">#10A7F9</color>
+    <color name="maya_blue">#0282c7</color>
+    <color name="location_chip">#03BC0C</color>
+    <color name="location_chip_bg">#4326611B</color>
+
+
+    <color name="active_dot">#fffafa</color>
+    <color name="inactive_dot">#83878b</color>
+    <array name="array_dot_active">
+        <item>#fffafa</item>
+        <item>#fffafa</item>
+        <item>#fffafa</item>
+        <item>#fffafa</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>#83878b</item>
+        <item>#83878b</item>
+        <item>#83878b</item>
+        <item>#83878b</item>
+    </array>
+
+
+</resources>

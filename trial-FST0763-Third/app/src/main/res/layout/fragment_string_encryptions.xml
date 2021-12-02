@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_jeans"
+    tools:context="com.example.trial_fst0763.StringEncryptionsTest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/stringEnc_edtText"
+            android:layout_margin="5dp"
+            android:hint="enter a string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textColor="@color/black"
+            android:text="Encrypt"
+            android:backgroundTint="#ffffff"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:id="@+id/Encrypt_Decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

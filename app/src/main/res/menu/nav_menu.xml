@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:showIn="navigation_view"
+    >
+<group android:enabled="true"
+    android:visible="true"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:icon="@drawable/location_vector"
+        android:title="Map"
+        />
+
+    <item
+        android:id="@+id/recycler_menu"
+        android:enabled="true"
+        android:icon="@drawable/rcl_vector"
+        android:title="Recycler View" />
+
+
+    <item
+        android:id="@+id/scanner"
+        android:enabled="true"
+        android:icon="@drawable/code_scanner"
+        android:title="Barcode Scanner" />
+
+    <item
+        android:id="@+id/otp_menu"
+        android:enabled="true"
+        android:icon="@drawable/otp_icon"
+        android:title="OTP Generator" />
+
+    <item
+        android:id="@+id/book_menu"
+        android:enabled="true"
+        android:icon="@drawable/book_movie"
+        android:title="Book Movie" />
+
+    <item
+        android:id="@+id/encrypt"
+        android:enabled="true"
+        android:icon="@drawable/encryption_icon"
+        android:title="Post API" />
+
+    <item
+        android:id="@+id/postAuthApi"
+        android:enabled="true"
+        android:icon="@drawable/encryption_icon"
+        android:title="Post Auth Header API" />
+
+
+</group>
+
+
+<group android:visible="true"
+    android:enabled="true"
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/signout"
+        android:enabled="true"
+        android:icon="@drawable/signout"
+        android:title="Sign Out" />
+</group>
+
+
+
+
+</menu>

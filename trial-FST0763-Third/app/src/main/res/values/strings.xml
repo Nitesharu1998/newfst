@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">trial-FST0763</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_drawer_open">Open</string>
+    <string name="close_nav_drawer">Close</string>
+    <string name="title_activity_route_map">Map</string>
+    <string name="google_maps_api">AIzaSyCzvcEQpFdzlIQp79rRzDdBqpK-WIiwEho</string>
+    <string name="channel_name">FST_Notification</string>
+    <string name="PHONE_API_KEY">NjM2ZjcyNzY2MzdhNzc2Njc0NTg2YjZlNDM2MTQyNjc=</string>
+    <string name="m1_description">The film opens with a prologue bringing the audience up to date, stating that each has suffered a personal loss despite their new riches. \n</string>
+    <string name="m2_description">The story revolves around the lives of Gopal, Lucky, Madhav and Laxman.  Laxman is a brilliant student who is diverted from his studies by his mischievous band of friends, Gopal, Madhav, and Lucky. Gopal is the muscle of the group, Madhav is the brain, and Lucky is the right one but a mute. The three friends use Laxman\'s hostel room for their mischievous activities.</string>
+    <string name="m3_description">The Republic of Wadiya is ruled by an eccentric and oppressive leader named Hafez Aladeen. Aladeen is summoned to New York to a UN assembly to address concerns about his country\'s nuclear weapons program, but the trip goes awry</string>
+    <string name="m4_description">Ace Ventura: Pet Detective is a 1994 American comedy film starring Jim Carrey as Ace Ventura, an animal detective who is tasked with finding the abducted dolphin mascot of the Miami Dolphins football team.</string>
+    <string name="m5_description">The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person\'s idea into a target\'s subconscious.</string>
+    <string name="User_agent">user_agent</string>
+
+
+</resources>
