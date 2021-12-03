@@ -1,7 +1,6 @@
 package com.example.Interface;
 
-import com.example.ModelClasses.AuthApiResponseModel;
-import com.example.ModelClasses.DataModel;
+import com.example.ModelClasses.TestMasterResponseModel;
 import com.example.ModelClasses.NueclearGetResponseModel;
 import com.example.ModelClasses.NueclearResponseModel;
 import com.example.ModelClasses.Nueclear_Request_Model;
@@ -26,7 +25,7 @@ import retrofit2.http.Part;
 public interface API_Interface {
 
     @GET("BrandTestRateList/2")
-    Call<DataModel> getPost();
+    Call<TestMasterResponseModel> getPost();
 
 
     @POST("Complaint_module/DH_SUBMIT_LID")

@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataModel {
+public class TestMasterResponseModel {
 
     ArrayList<TestMaster> tstratemaster;
 

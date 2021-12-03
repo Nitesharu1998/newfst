@@ -1,50 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/black"
     android:orientation="horizontal"
+    android:weightSum=""
+
 
     >
 
+    <TextView
+        android:id="@+id/rclcount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="sample_text" />
 
+    <TextView
+        android:id="@+id/rcl_testtype"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
 
-            <TextView
-                android:id="@+id/rcl_testtype"
-                android:background="@drawable/recl_border"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="sample_text"
-                android:padding="4dp"
-                android:layout_weight="1"/>
-            <TextView
-                android:background="@drawable/recl_border"
-                android:id="@+id/rcl_fasting"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="sample_text" />
 
-                android:text="sample_text"
-                android:layout_weight="1"/>
-            <TextView
-                android:padding="4dp"
-                android:background="@drawable/recl_border"
-                android:id="@+id/rcl_description"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="sample_text"
-                android:layout_weight="1"/>
-            <TextView
-                android:padding="4dp"
-                android:background="@drawable/recl_border"
-                android:id="@+id/rcl_rate"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="sample_text"
-                android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/rcl_fasting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+
+        android:background="@color/white"
+        android:gravity="center"
+
+        android:padding="4dp"
+        android:text="sample_text" />
+
+    <TextView
+        android:id="@+id/rcl_description"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="sample_text" />
+
+    <TextView
+        android:id="@+id/rcl_rate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="sample_text" />
 
 
 </LinearLayout>

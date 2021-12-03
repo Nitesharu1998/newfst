@@ -102,7 +102,7 @@ public class homePage extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.recycler_menu:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frm_layout, new recycle_API()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frm_layout, new RecycleApiFragment()).commit();
 
                         drawer.closeDrawers();
 
@@ -153,6 +153,9 @@ public class homePage extends AppCompatActivity {
                                 String phone = sharedPreferences.getString("phone", null);
                                 if (phone != null) {
                                     ed.remove("phone");
+                                    ed.remove("saved_arraylist");
+                                    ed.remove("TestMaster");
+                                    ed.remove("date");
                                     ed.apply();
                                     ed.commit();
                                     startActivity(new Intent(getApplicationContext(), MainActivity.class));

@@ -10,14 +10,7 @@
     app:layout_anchorGravity="center"
     tools:context=".NueclearApiCall">
 
-    <TextView
-        android:id="@+id/nueclear_token_generate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Click to get the access token"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+
 
     <Button
         android:layout_marginTop="20dp"

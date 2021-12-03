@@ -12,21 +12,21 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fst_t0763.R;
-import com.example.ModelClasses.DataModel;
+import com.example.ModelClasses.TestMasterResponseModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class rcl_view_holder extends RecyclerView.Adapter<rcl_view_holder.viewholder> {
+public class TestMasterApiAdapter extends RecyclerView.Adapter<TestMasterApiAdapter.viewholder> {
 
     String sample = " ";
 
-    List<DataModel.TestMaster> testMasArraylist;
+    List<TestMasterResponseModel.TestMaster> testMasArraylist;
 
     Context context;
 
-    public rcl_view_holder(List<DataModel.TestMaster> testMaster, Context context) {
+    public TestMasterApiAdapter(List<TestMasterResponseModel.TestMaster> testMaster, Context context) {
         this.testMasArraylist = testMaster;
 
         this.context = context;
@@ -42,7 +42,14 @@ public class rcl_view_holder extends RecyclerView.Adapter<rcl_view_holder.viewho
 
     @Override
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
-        DataModel.TestMaster tstratemasterDTO = testMasArraylist.get(position);
+        TestMasterResponseModel.TestMaster tstratemasterDTO = testMasArraylist.get(position);
+        //
+        for (int c=0;c<=position;c++){
+            holder.rclcount.setText(String.valueOf(position+1));
+        }
+       /* Toast.makeText(context, "count: "+getItemCount(), Toast.LENGTH_SHORT).show();*/
+
+        //
         holder.fasting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,7 +109,7 @@ public class rcl_view_holder extends RecyclerView.Adapter<rcl_view_holder.viewho
 
     public static class viewholder extends RecyclerView.ViewHolder {
 
-        TextView testtype, fasting, description, rate, rate_table;
+        TextView testtype, fasting, description, rate, rclcount;
         String str_rate, str_description;
 
 
@@ -113,6 +120,7 @@ public class rcl_view_holder extends RecyclerView.Adapter<rcl_view_holder.viewho
             fasting = itemView.findViewById(R.id.rcl_fasting);
             description = itemView.findViewById(R.id.rcl_description);
             rate = itemView.findViewById(R.id.rcl_rate);
+            rclcount = itemView.findViewById(R.id.rclcount);
 
         }
     }
