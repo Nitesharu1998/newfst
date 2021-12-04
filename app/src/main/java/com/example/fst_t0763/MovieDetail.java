@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fst_t0763.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.slider.Slider;
 

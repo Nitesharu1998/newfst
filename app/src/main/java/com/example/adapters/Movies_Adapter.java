@@ -1,31 +1,25 @@
 package com.example.adapters;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fst_t0763.R;
-import com.example.trial_fst0763.MovieDetail;
+import com.example.fst_t0763.MovieDetail;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.trial_fst0763.MainActivity.PREFERENCE;
+import static com.example.fst_t0763.MainActivity.PREFERENCE;
 
 public class Movies_Adapter extends RecyclerView.Adapter<Movies_Adapter.viewHolder> {
 

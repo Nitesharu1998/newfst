@@ -40,9 +40,9 @@
         android:theme="@style/Theme.FST_T0763"
         android:usesCleartextTraffic="true">
         <activity android:name=".AuthApiCall"></activity>
-        <activity android:name="com.example.trial_fst0763.Payments" />
+        <activity android:name="com.example.fst_t0763.Payments" />
         <!--
-          <service android:name="com.example.trial_fst0763.SmsBroadCastReceiver"
+          <service android:name="com.example.fst_t0763.SmsBroadCastReceiver"
             android:label="notification"
             android:permission="android.permission.">
 
@@ -52,7 +52,7 @@
 
         </service>
         -->
-        <activity android:name="com.example.trial_fst0763.IntroSlider">
+        <activity android:name="com.example.fst_t0763.IntroSlider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,11 +64,11 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_api" />
 
-        <activity android:name="com.example.trial_fst0763.scan_handler" />
-        <activity android:name="com.example.trial_fst0763.splash" />
-        <activity android:name="com.example.trial_fst0763.homePage" />
-        <activity android:name="com.example.trial_fst0763.registerUser" />
-        <activity android:name="com.example.trial_fst0763.MainActivity" />
+        <activity android:name="com.example.fst_t0763.scan_handler" />
+        <activity android:name="com.example.fst_t0763.splash" />
+        <activity android:name="com.example.fst_t0763.homePage" />
+        <activity android:name="com.example.fst_t0763.registerUser" />
+        <activity android:name="com.example.fst_t0763.MainActivity" />
     </application>
 
 </manifest>

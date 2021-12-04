@@ -13,11 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.Controllers.NueclearApiController;
 import com.example.ModelClasses.NueclearGetResponseModel;
 import com.example.ModelClasses.Nueclear_Request_Model;
@@ -25,14 +20,9 @@ import com.example.adapters.NueclearAPIAdapter;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
-import static com.example.trial_fst0763.MainActivity.PREFERENCE;
+import static com.example.fst_t0763.MainActivity.PREFERENCE;
 
 public class NueclearApiCall extends AppCompatActivity {
 

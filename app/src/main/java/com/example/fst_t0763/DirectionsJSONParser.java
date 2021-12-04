@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import com.google.android.gms.maps.model.LatLng;
 

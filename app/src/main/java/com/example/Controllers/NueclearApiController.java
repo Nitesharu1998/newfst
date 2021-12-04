@@ -17,8 +17,9 @@ import com.example.ModelClasses.TestMasterResponseModel;
 import com.example.ModelClasses.NueclearGetResponseModel;
 import com.example.ModelClasses.NueclearResponseModel;
 import com.example.ModelClasses.Nueclear_Request_Model;
+import com.example.fst_t0763.NewTestMasterCall;
 import com.example.fst_t0763.NueclearApiCall;
-import com.example.trial_fst0763.RecycleApiFragment;
+import com.example.fst_t0763.RecycleApiFragment;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -37,11 +38,17 @@ import retrofit2.Response;
 public class NueclearApiController {
     private NueclearApiCall nueclearApiCall;
     private RecycleApiFragment recycleApiFragment;
+    NewTestMasterCall newTestMasterCall;
     private Activity activity;
 
     public NueclearApiController(NueclearApiCall nueclearApiCall) {
         this.nueclearApiCall = nueclearApiCall;
         this.activity = nueclearApiCall;
+    }
+
+    public NueclearApiController(NewTestMasterCall newTestMasterCall) {
+        this.newTestMasterCall = newTestMasterCall;
+        this.activity = newTestMasterCall;
     }
 
     public NueclearApiController(RecycleApiFragment recycleApiFragment) {
@@ -62,7 +69,7 @@ public class NueclearApiController {
 
     //TestMasterApi Call
     public void callTestmaster() {
-        progressDialog=new ProgressDialog(activity,ProgressDialog.STYLE_SPINNER);
+        progressDialog=new ProgressDialog(activity);
         progressDialog.setTitle("Please wait....");
         progressDialog.show();
         API_Interface api_interface = APIClient.getInstance().getClient("https://techso.thyrocare.cloud/techsoapi/api/").create(API_Interface.class);
@@ -74,8 +81,9 @@ public class NueclearApiController {
                 if (response.isSuccessful() && response.body() != null) {
                     testMasterResponseModel = response.body();
                     sortedData = testMasterResponseModel.getTstratemaster();
+
                     if (sortedData != null) {
-                        sendToFragment(sortedData);
+                        sendTestMaster(sortedData);
                     }
                 }
 
@@ -247,8 +255,9 @@ public class NueclearApiController {
         }
     }
 
-    private void sendToFragment(ArrayList<TestMasterResponseModel.TestMaster> sortedData) {
-        recycleApiFragment.getModel(sortedData);
+    private void sendTestMaster(ArrayList<TestMasterResponseModel.TestMaster> sortedData) {
+      /*  recycleApiFragment.getModel(sortedData);*/
+        newTestMasterCall.getModel(sortedData);
     }
 
 

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.trial_fst0763.Base">
+    tools:context="com.example.fst_t0763.Base">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

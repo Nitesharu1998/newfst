@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
@@ -22,12 +22,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.APIClient_Classes.APIClient;
-import com.example.APIClient_Classes.AuthHeaderClient;
 import com.example.Interface.API_Interface;
-import com.example.ModelClasses.Response_Data_Model;
 import com.example.ModelClasses.TechsoTokenResponseModel;
-import com.example.fst_t0763.NueclearApiCall;
-import com.example.fst_t0763.R;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;

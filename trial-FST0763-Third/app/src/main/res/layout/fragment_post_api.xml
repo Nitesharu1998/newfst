@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.trial_fst0763.PostAPI"
+    tools:context="com.example.fst_t0763.PostAPI"
     android:layout_gravity="center"
     android:background=" #7a5947"
     >

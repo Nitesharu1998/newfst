@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.os.Bundle;
 
@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.adapters.ViewPagerAdapter;
-import com.example.fst_t0763.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class Base extends Fragment {

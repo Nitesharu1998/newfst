@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.trial_fst0763.Payments">
+    tools:context=".Payments">
 
 
     <ImageView

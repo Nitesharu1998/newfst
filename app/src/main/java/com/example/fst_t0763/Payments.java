@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,23 +9,20 @@ import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fst_t0763.R;
 import com.razorpay.Checkout;
 import com.razorpay.PaymentResultListener;
 
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import static com.example.trial_fst0763.MainActivity.PREFERENCE;
+import static com.example.fst_t0763.MainActivity.PREFERENCE;
 
 public class Payments extends AppCompatActivity implements PaymentResultListener {
     Button pay;

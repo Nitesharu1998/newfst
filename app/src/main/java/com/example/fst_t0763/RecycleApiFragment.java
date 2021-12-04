@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -20,16 +20,12 @@ import android.widget.Toast;
 import com.example.Controllers.NueclearApiController;
 import com.example.ModelClasses.TestMasterResponseModel;
 import com.example.adapters.TestMasterApiAdapter;
-import com.example.fst_t0763.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -37,7 +33,7 @@ import java.util.Comparator;
 import java.util.Date;
 
 import static android.content.Context.MODE_PRIVATE;
-import static com.example.trial_fst0763.MainActivity.PREFERENCE;
+import static com.example.fst_t0763.MainActivity.PREFERENCE;
 
 
 public class RecycleApiFragment extends Fragment {

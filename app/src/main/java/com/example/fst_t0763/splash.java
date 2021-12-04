@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,9 +10,8 @@ import android.view.View;
 import android.widget.ProgressBar;
 
 //import static com.example.fst_t0763.MainActivity.PREFERENCE;
-import com.example.fst_t0763.R;
 
-import static com.example.trial_fst0763.MainActivity.PREFERENCE;
+import static com.example.fst_t0763.MainActivity.PREFERENCE;
 
 public class splash extends AppCompatActivity {
     ProgressBar pbar;

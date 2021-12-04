@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/movie_detail_frame"
-    tools:context="com.example.trial_fst0763.MovieDetail"
+    tools:context="com.example.fst_t0763.MovieDetail"
     android:background="#FFFFFF"
     >
     <LinearLayout

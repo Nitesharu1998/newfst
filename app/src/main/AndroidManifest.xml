@@ -39,11 +39,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FST_T0763"
         android:usesCleartextTraffic="true">
-        <activity android:name=".NueclearApiCall"></activity>
-        <activity android:name="com.example.trial_fst0763.AuthApiCall" />
-        <activity android:name="com.example.trial_fst0763.Payments" />
+        <activity android:name=".NewTestMasterCall"></activity>
+        <activity android:name=".NueclearApiCall" />
+        <activity android:name=".AuthApiCall" />
+        <activity android:name=".Payments" />
         <!--
-          <service android:name="com.example.trial_fst0763.SmsBroadCastReceiver"
+          <service android:name="com.example.fst_t0763.SmsBroadCastReceiver"
             android:label="notification"
             android:permission="android.permission.">
 
@@ -53,7 +54,7 @@
 
         </service>
         -->
-        <activity android:name="com.example.trial_fst0763.IntroSlider">
+        <activity android:name=".IntroSlider">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -65,11 +66,11 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_api" />
 
-        <activity android:name="com.example.trial_fst0763.scan_handler" />
-        <activity android:name="com.example.trial_fst0763.splash" />
-        <activity android:name="com.example.trial_fst0763.homePage" />
-        <activity android:name="com.example.trial_fst0763.registerUser" />
-        <activity android:name="com.example.trial_fst0763.MainActivity" />
+        <activity android:name=".scan_handler" />
+        <activity android:name=".splash" />
+        <activity android:name=".homePage" />
+        <activity android:name=".registerUser" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

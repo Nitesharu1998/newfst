@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,7 +18,7 @@ public class SmsBroadCastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (intent.getAction() == SmsRetriever.SMS_RETRIEVED_ACTION) {
+        if (intent.getAction()==SmsRetriever.SMS_RETRIEVED_ACTION) {
             Bundle bundle = intent.getExtras();
             Status smsRetrieveStatus = (Status) bundle.get(SmsRetriever.EXTRA_STATUS);
             switch (smsRetrieveStatus.getStatusCode()) {

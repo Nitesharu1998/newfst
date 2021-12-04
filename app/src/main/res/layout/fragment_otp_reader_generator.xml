@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_jeans"
-    tools:context="com.example.trial_fst0763.OtpReaderGenerator">
+    tools:context=".OtpReaderGenerator">
 
 
 

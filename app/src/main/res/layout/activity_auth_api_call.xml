@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#4CAF50"
-    tools:context="com.example.trial_fst0763.AuthApiCall">
+    tools:context=".AuthApiCall">
 
     <Button
         style="@style/Widget.MaterialComponents.FloatingActionButton"

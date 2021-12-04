@@ -1,4 +1,4 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -19,7 +19,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.fst_t0763.R;
 import com.google.android.material.navigation.NavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -134,6 +133,11 @@ public class homePage extends AppCompatActivity {
 
                     case R.id.postAuthApi:
                        startActivity(new Intent(homePage.this, AuthApiCall.class));
+                        break;
+
+                    case R.id.testMasterNewCall:
+                        startActivity(new Intent(homePage.this,NewTestMasterCall.class));
+                        drawer.closeDrawers();
                         break;
 
 

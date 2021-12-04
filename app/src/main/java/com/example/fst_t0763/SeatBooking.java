@@ -1,12 +1,10 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.os.Parcelable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,12 +16,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.adapters.SeatBooking_Adapter;
-import com.example.fst_t0763.R;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class SeatBooking extends Fragment {
     int TotalSeats, checker = 1;

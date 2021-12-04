@@ -10,7 +10,7 @@
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true"
 
-    tools:context="com.example.trial_fst0763.registerUser">
+    tools:context=".registerUser">
 
     <ScrollView
         android:layout_width="match_parent"

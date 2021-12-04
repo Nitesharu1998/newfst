@@ -1,11 +1,10 @@
-package com.example.trial_fst0763;
+package com.example.fst_t0763;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -16,7 +15,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.example.fst_t0763.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.regex.Matcher;
