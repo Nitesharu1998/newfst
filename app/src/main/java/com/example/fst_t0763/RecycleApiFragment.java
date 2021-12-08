@@ -89,8 +89,7 @@ public class RecycleApiFragment extends Fragment {
                     getAndSaveDate();
                 }
                 else {
-                    TypeToken<ArrayList<TestMasterResponseModel.TestMaster>> type = new TypeToken<ArrayList<TestMasterResponseModel.TestMaster>>() {
-                    };
+                    TypeToken<ArrayList<TestMasterResponseModel.TestMaster>> type = new TypeToken<ArrayList<TestMasterResponseModel.TestMaster>>() {};
                     SortedData = new Gson().fromJson(data, type.getType());
                     SetAdatper(SortedData);
                     initListerner();

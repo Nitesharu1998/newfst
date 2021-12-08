@@ -1,7 +1,22 @@
 package com.example.Controllers;
 
-import android.content.SharedPreferences;
-
 public class sharedPreferences {
-  /*  SharedPreferences sharedPreferences= */
+    String retrieved_value;
+
+    private void getSharedPreferences() {
+
+    }
+
+    private String getString(String key) {
+
+        return retrieved_value;
+    }
+
+    void putString(String key) {
+
+    }
+
+    void remove(String key) {
+
+    }
 }

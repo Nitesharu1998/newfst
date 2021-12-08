@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="1"
     tools:context=".NewTestMasterCall">
-   <!-- <TableLayout
+ <!--   <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="1dp"
@@ -18,14 +19,6 @@
             android:weightSum="4"
             android:layout_gravity="center"
             android:background="@color/black">
-            &lt;!&ndash;<TextView android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:layout_margin="1dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="SR.No"/>&ndash;&gt;
 
             <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -34,7 +27,7 @@
                 android:layout_margin="1dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="sample text"/>
+                android:text="Test type"/>
 
             <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -43,7 +36,7 @@
                 android:layout_margin="1dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="sample text"/>
+                android:text="Fasting"/>
 
             <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -52,7 +45,7 @@
                 android:layout_margin="1dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="sample text"/>
+                android:text="Description"/>
 
             <TextView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -61,24 +54,25 @@
                 android:layout_margin="1dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="sample text"/>
+                android:text="Rate"/>
         </TableRow>
 
 
 
 
-    </TableLayout>
--->
+    </TableLayout>-->
 
-    <ScrollView
+   <!-- <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <LinearLayout
+        android:layout_height="wrap_content">-->
+    <TableLayout
+        android:layout_weight="1"
+        style="@style/Widget.MaterialComponents.TabLayout"
         android:id="@+id/table_linear"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"/>
-    </ScrollView>
+        android:layout_height="match_parent"
+      />
+   <!-- </ScrollView>-->
 
 
 </LinearLayout>

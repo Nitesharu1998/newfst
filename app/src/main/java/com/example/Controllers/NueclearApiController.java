@@ -49,18 +49,21 @@ public class NueclearApiController {
     public NueclearApiController(NewTestMasterCall newTestMasterCall) {
         this.newTestMasterCall = newTestMasterCall;
         this.activity = newTestMasterCall;
+        activityFlag=2;
     }
 
     public NueclearApiController(RecycleApiFragment recycleApiFragment) {
         this.recycleApiFragment = recycleApiFragment;
         this.activity = recycleApiFragment.getActivity();
-
+        activityFlag=3;
 
     }
 
     private String AuthKey, volleyUrl, ReqModel, tempServiceName;
     API_Interface api_interface;
     int volley_flag = 0, retrofit_flag = 1;
+    int activityFlag;
+
     private ArrayList<NueclearGetResponseModel> serviceMaster = new ArrayList<>();
     private ArrayList<TestMasterResponseModel.TestMaster> sortedData = new ArrayList<>();
     private TestMasterResponseModel testMasterResponseModel;
@@ -83,7 +86,7 @@ public class NueclearApiController {
                     sortedData = testMasterResponseModel.getTstratemaster();
 
                     if (sortedData != null) {
-                        sendTestMaster(sortedData);
+                        sendTestMaster(sortedData,activityFlag);
                     }
                 }
 
@@ -255,9 +258,10 @@ public class NueclearApiController {
         }
     }
 
-    private void sendTestMaster(ArrayList<TestMasterResponseModel.TestMaster> sortedData) {
-      /*  recycleApiFragment.getModel(sortedData);*/
-        newTestMasterCall.getModel(sortedData);
+    private void sendTestMaster(ArrayList<TestMasterResponseModel.TestMaster> sortedData, int activityFlag) {
+        if (activityFlag==3){   recycleApiFragment.getModel(sortedData);}
+
+       else if(activityFlag==2) {newTestMasterCall.getModel(sortedData);}
     }
 
 
