@@ -186,12 +186,6 @@ public class AuthApiCall extends AppCompatActivity {
                         file = new File(trial);
                         Toast.makeText(this, "retrieved image data", Toast.LENGTH_SHORT).show();
                         auth_header_image_text.setText(trial);
-
-                       /* String path=picked_image.getPath();
-                        String filename=picked_image.getLastPathSegment();
-
-                        Log.i("nameandpath",path+"\n"+filename);
-*/
                     }
 
                 }
@@ -213,14 +207,12 @@ public class AuthApiCall extends AppCompatActivity {
         RequestBody Btechid = RequestBody.create(MediaType.parse("multipart/form-data"), btechid);
         RequestBody ORDERNO = RequestBody.create(MediaType.parse("multipart/form-data"), oRDERNO);
         MultipartBody.Part Image = null;
+
         if (file != null && file.exists()) {
             RequestBody f1 = RequestBody.create(MediaType.parse("multipart/form-data"), file);
             Image = MultipartBody.Part.createFormData("file", file.getName(), f1);
         }
-
         try {
-
-
             API_Interface api_interface = APIClient.getInstance().getClient("http://techsostng.thyrocare.cloud/techsoapi/api/")
                     .create(API_Interface.class);
             Call<String> authApiResponseModelCall = api_interface.sendAuthHeader("Bearer "+AuthKey,Btechid, ORDERNO, Image);

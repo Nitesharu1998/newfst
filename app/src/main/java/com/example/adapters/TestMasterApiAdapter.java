@@ -57,8 +57,8 @@ public class TestMasterApiAdapter extends RecyclerView.Adapter<TestMasterApiAdap
 
                 String[] arr_size = new String[tstratemasterDTO.getSampltype().size()];
 
+                List<String> trial = new ArrayList<>();
                 for (int i = 0; i < arr_size.length; i++) {
-                    List<String> trial = new ArrayList<>();
                     for (int j = 0; j < arr_size.length; j++) {
                         trial.add(j, tstratemasterDTO.getSampltype().get(j).getsampleType());
                     }

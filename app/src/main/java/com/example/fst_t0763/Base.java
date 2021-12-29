@@ -34,8 +34,9 @@ public class Base extends Fragment {
         ViewPagerAdapter adapter=new ViewPagerAdapter(getChildFragmentManager());
 
         adapter.addFrag(new PostAPI(),"POST API");
-        adapter.addFrag(new StringEncryptionsTest(),"String Encryption");
-
+        adapter.addFrag(new StringEncryption(),"String Encryption");
+       /* adapter.addFrag(new ShareData(),"String Encryption");
+*/
         viewPager.setAdapter(adapter);
 
         return v;

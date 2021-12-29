@@ -42,7 +42,7 @@
         android:id="@+id/encrypt"
         android:enabled="true"
         android:icon="@drawable/encryption_icon"
-        android:title="Post API" />
+        android:title="sample Fragments" />
 
     <item
         android:id="@+id/postAuthApi"
@@ -56,6 +56,12 @@
         android:enabled="true"
         android:icon="@drawable/rcl_vector"
         android:title="New TestMaster Call" />
+
+    <item
+        android:id="@+id/shareData"
+        android:enabled="true"
+        android:icon="@drawable/rcl_vector"
+        android:title="Share" />
 
 
 </group>

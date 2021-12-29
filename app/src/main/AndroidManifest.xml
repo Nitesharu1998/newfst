@@ -39,7 +39,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FST_T0763"
         android:usesCleartextTraffic="true">
-        <activity android:name=".NewTestMasterCall"></activity>
+        <activity
+            android:name=".DataShare"
+            android:exported="false" />
+        <activity android:name=".NewTestMasterCall" />
         <activity android:name=".NueclearApiCall" />
         <activity android:name=".AuthApiCall" />
         <activity android:name=".Payments" />

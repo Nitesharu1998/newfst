@@ -133,10 +133,16 @@ public class homePage extends AppCompatActivity {
 
                     case R.id.postAuthApi:
                        startActivity(new Intent(homePage.this, AuthApiCall.class));
+                        drawer.closeDrawers();
                         break;
 
                     case R.id.testMasterNewCall:
                         startActivity(new Intent(homePage.this,NewTestMasterCall.class));
+                        drawer.closeDrawers();
+                        break;
+
+                    case R.id.shareData:
+                        startActivity(new Intent(homePage.this,DataShare.class));
                         drawer.closeDrawers();
                         break;
 
